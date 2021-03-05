@@ -26,6 +26,20 @@ a {
   text-decoration: none;
   color: #333;
 }
+.btn {
+  border: 1px solid #7795a8;
+  color: #7795a8;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+.btn:hover {
+  color: #fff;
+  background-color: #7795a8;
+}
 button:focus,
 input:focus {
   outline: 0;
@@ -266,16 +280,39 @@ input:focus {
   margin: 0 auto;
   max-width: 1170px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 210px));
   grid-column-gap: 1.5rem;
   grid-row-gap: 2rem;
   align-items: center;
   justify-content: center;
 }
 .product {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
   padding: 15px;
+  border-radius: 10px;
 }
+.buy-now-btn {
+  border: 0;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #9977a8;
+}
+.buy-now-btn:hover {
+  background: none;
+  color: #9977a8;
+}
+.cart-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.cart-icons .cart {
+}
+.cart-icons .cart:hover {
+}
+
 .img-container {
   position: relative;
   overflow: hidden;
@@ -314,10 +351,23 @@ input:focus {
 
 .product h3 {
   text-transform: capitalize;
-  font-size: 1.1rem;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: teal;
   margin-top: 1rem;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: 1px;
   text-align: center;
+}
+.product h2 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+.product .price {
+  color: teal;
 }
 
 .product h4 {
