@@ -1,0 +1,34 @@
+/**
+ * /* header
+ *
+ * @format
+ */
+@media only screen and (max-width: 991px) {
+	.navbar {
+		display: none;
+	}
+	.show-all-category-btn {
+		display: flex;
+	}
+}
+@media only screen and (max-width: 979px) {
+	.lg {
+		display: none;
+	}
+	.md {
+		display: flex;
+		width: 100%;
+	}
+	.header-top-container {
+		flex-wrap: wrap;
+	}
+}
+@media only screen and (max-width: 599px) {
+	.header-top-container {
+		flex-direction: column;
+	}
+	.logo {
+		margin-bottom: 40px;
+	}
+}
+/* End of Header */
