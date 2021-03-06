@@ -347,7 +347,7 @@ input:focus {
 .product-img {
 	display: block;
 	width: 80%;
-	transition: var(--mainTransition);
+	transition: 0.3s;
 	margin: auto;
 }
 .img-container:hover .product-img {
@@ -378,5 +378,11 @@ input:focus {
 .fa-shopping-cart {
 	margin-right: 10px;
 }
-
+.products.popular-homemade-ready-meals .product,
+.products.wholesale-products .product {
+	padding: 0;
+}
+.products.popular-homemade-ready-meals .product-img,.products.wholesale-products .product-img {
+	width: 100%;
+}
 /* ---------------End of Products ---------------- */
