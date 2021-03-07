@@ -37,3 +37,12 @@
   }
 }
 /* End of Header */
+
+@media only screen and (max-width: 767px) {
+  .why-prefer .section-center {
+    flex-direction: column;
+  }
+  .why-prefer .section-center .row {
+    width: 100%;
+  }
+}
