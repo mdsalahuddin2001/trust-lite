@@ -4,45 +4,66 @@
  * @format
  */
 @media only screen and (max-width: 991px) {
-  .navbar {
-    display: none;
-  }
-  .show-all-category-btn {
-    display: flex;
-  }
+	.navbar {
+		display: none;
+	}
+	.show-all-category-btn {
+		display: flex;
+	}
+	.submenu {
+		display: none;
+	}
+	.banner-container .slider .slide-content img {
+		width: 100%;
+		height: auto;
+	}
+
+	.owl-carousel {
+		width: 100%;
+		height: auto;
+	}
+
+	.slide {
+		width: 100%;
+		height: auto;
+		position: relative;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 }
 @media only screen and (max-width: 979px) {
-  .lg {
-    display: none;
-  }
-  .md {
-    display: flex;
-    width: 100%;
-  }
-  .header-top-container {
-    flex-wrap: wrap;
-  }
+	.lg {
+		display: none;
+	}
+	.md {
+		display: flex;
+		width: 100%;
+	}
+	.header-top-container {
+		flex-wrap: wrap;
+	}
 }
 @media only screen and (max-width: 599px) {
-  .header-top-container {
-    flex-direction: column;
-  }
-  .logo {
-    margin-bottom: 40px;
-  }
+	.header-top-container {
+		flex-direction: column;
+	}
+	.logo {
+		margin-bottom: 40px;
+	}
 }
 @media only screen and (max-width: 457px) {
-  .header-top-right-list li a span {
-    text-align: center;
-  }
+	.header-top-right-list li a span {
+		text-align: center;
+	}
 }
 /* End of Header */
 
 @media only screen and (max-width: 767px) {
-  .why-prefer .section-center {
-    flex-direction: column;
-  }
-  .why-prefer .section-center .row {
-    width: 100%;
-  }
+	.why-prefer .section-center {
+		flex-direction: column;
+	}
+	.why-prefer .section-center .row {
+		width: 100%;
+	}
 }

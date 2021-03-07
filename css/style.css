@@ -507,6 +507,7 @@ input:focus {
 }
 /* hide text */
 .why-prefer .question-text {
+	transition: display 0.3s;
 	display: none;
 }
 .why-prefer .show-text .question-text {
