@@ -1,0 +1,178 @@
+/** @format */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Raleway', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+.container {
+	max-width: 1140px;
+	margin: auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+footer {
+	padding: 50px 0;
+	background-color: #232323;
+}
+.footer-top {
+	border-bottom: 1px solid rgba(72, 70, 70, 0.29);
+	margin-bottom: 30px;
+}
+
+.footer-top-item {
+	flex: 0 0 25%;
+	max-width: 25%;
+	padding: 15px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #fff;
+}
+.footer-top-item span {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.footer-top-item span i {
+	font-size: 30px;
+}
+@media only screen and (max-width: 767px) {
+	.footer-top-item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1047px) {
+	.footer-top-item {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+}
+
+.single-contact {
+	flex: 0 0 25%;
+	max-width: 25%;
+}
+
+.single-contact-inner {
+	padding: 15px;
+	width: 100%;
+}
+
+.contact-title {
+	margin-bottom: 15px;
+}
+.contact-title h5 {
+	color: #fff;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.bottom-line {
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 25px;
+	position: relative;
+}
+.bottom-line::before {
+	content: '';
+	height: 100%;
+	width: 40%;
+	position: absolute;
+	background: #587542;
+	top: 0;
+	left: 1px;
+}
+.contact-info li {
+	padding: 5px;
+}
+.contact-info i {
+	font-size: 14px;
+	margin-right: 5px;
+	color: #fff;
+}
+.contact-info span {
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.5;
+	font-weight: 400;
+}
+.contact-info a {
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.5;
+	font-weight: 400;
+}
+.social-links {
+	margin-top: 20px;
+	display: flex;
+}
+
+.info-item {
+	width: 100%;
+	display: flex;
+	border-radius: 5px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	border: 1px solid #fff;
+}
+
+.contact-info-img {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	padding: 10px;
+}
+.contact-info-img img {
+	width: 100%;
+	height: 100%;
+}
+.contact-info-link p {
+	text-transform: capitalize;
+}
+.footer-form input[type='text'],
+textarea {
+	width: 100%;
+	background: none;
+	border: 0;
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.footer-form button {
+	border: 0;
+	background: #da0266;
+	color: #fff;
+	padding: 12px 30px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+@media only screen and (max-width: 767px) {
+	.single-contact {
+		flex: 0 0 100%;
+		max-width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+	.single-contact {
+		flex: 0 0 50%;
+		max-width: 50%;
+		margin-bottom: 20px;
+	}
+}
+/* footer part end*/

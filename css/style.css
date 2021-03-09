@@ -16,6 +16,17 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
 img {
 	max-width: 100%;
 }
@@ -25,6 +36,12 @@ ul {
 a {
 	text-decoration: none;
 	color: #333;
+}
+.section-title h2 {
+	margin-bottom: 15px;
+}
+section {
+	padding-bottom: 30px;
 }
 .btn {
 	border: 1px solid #7795a8;
@@ -140,6 +157,7 @@ input:focus {
 .navbar {
 	background-color: #f6f6f6;
 	padding: 15px 0;
+	height: 80px;
 }
 .nav-links {
 	display: flex;
@@ -154,18 +172,33 @@ input:focus {
 	color: #444;
 	margin-right: 20px;
 }
-.show-all-category-btn {
+.moving-text {
 	width: 100%;
-	background: orange;
+	background: #23a2b5;
 	padding: 12px 12px;
-	border-radius: 4px;
 	margin-bottom: 15px;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	text-transform: capitalize;
 	color: #fff;
-	display: none;
+	height: 80px;
+	overflow: hidden;
+}
+.moving-text p {
+	letter-spacing: 1px;
+	word-spacing: 2.5px;
+	animation-name: moving-text;
+	animation-duration: 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+@keyframes moving-text {
+	0% {
+		transform: translate(180%);
+	}
+	100% {
+		transform: translate(-110%);
+	}
 }
 /* End of Navbar */
 /* ---------- End of Header ---------- */
@@ -523,3 +556,59 @@ input:focus {
 	display: none;
 }
 /* ---------- End of why prefer ---------- */
+/* Testimonial Styling */
+
+.testimonial-cards {
+	padding: 35px 8px;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.testimonial-cards.flex {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 0;
+}
+.testimonial-card {
+	flex-basis: 330px;
+	margin-bottom: 40px;
+	background-color: #23a2b5;
+	color: #fff;
+	border-radius: 4px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+	padding: 20px;
+}
+.testimonial-card p {
+	margin-bottom: 15px;
+}
+.testimonial-card {
+	position: relative;
+}
+.testimonial-card::before {
+	content: ' ';
+	height: 32px;
+	width: 55px;
+	background-image: url('../assets/img/bg-quotes.png');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -16%;
+	left: -2%;
+}
+.testimonial-card .user {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	padding: 10px 0;
+}
+.testimonial-card .user img {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.testimonial-card .user .user-info h4 {
+	font-size: 11px;
+}
+.testimonial-card .user .user-info p.title {
+	margin: 0;
+	font-size: 10px;
+}

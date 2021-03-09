@@ -67,3 +67,26 @@
 		width: 100%;
 	}
 }
+/* Responsive Testimonial Section */
+@media screen and (max-width: 1120px) {
+	.testimonial-cards.flex {
+		justify-content: center;
+	}
+	.testimonial-card {
+		margin: 20px;
+	}
+}
+@media screen and (max-width: 840px) {
+	.testimonial-card {
+		margin: 0 15px 15px 0;
+	}
+	.testimonial-card:nth-child(2) {
+		margin-right: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	.testimonial-card {
+		margin: 20px 10px;
+		margin-right: 0;
+	}
+}
